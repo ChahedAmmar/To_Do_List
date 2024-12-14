@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+background-color: white; 
+    color: #333; /* Set a darker color for text to make it readable */
+    font-family: Arial, sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    
+}
+footer {
+    background: linear-gradient(45deg, #FFD700, #fff8dc);
+    padding: 20px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    margin-top: 300px;
+   
+  }
+  
+  footer h3 {
+    color: #FF6F61;
+  }
+  
+  footer form {
+    margin: 20px 0;
+  }
+  
+  footer input[type="email"] {
+    padding: 10px;
+    width: 60%;
+    max-width: 300px;
+    border: 1px solid #FF6F61;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  footer button {
+    padding: 10px 20px;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer button:hover {
+    background-color: #FF8E79;
+  }
+  
+div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+#moon {
+    width: 30px;
+}
+nav {
+    display: flex;
+    margin-left: 10px;
+    gap: 20px;
+    align-items: center;
+   
+
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    cursor: pointer;
+    margin: 20px;
+    font-family: "Montserrat Alternates", sans-serif;
+  
+  font-style: normal;
+  font-weight: bold;
+    color: #ffd700;
+
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+nav ul li a:visited{
+    color:#ffd700 ;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    /*background: transparent;
+    backdrop-filter:blur(15px);*/
+    background-color: beige;
+    border: none;
+    border-radius: 10px;
+    height: auto;
+    margin:50px
+    
+
+   
+}
+.social-icons img {
+    width: 20px;
+    margin: 0 10px;
+}
+h1 {
+    margin-top: 50px; /* Reduce top margin */
+    color: #FF9500;
+    text-align: center;
+    margin-bottom: 20px; /* Add a bit more bottom margin for balance */
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    background: transparent;
+    height: auto; /* Change from 100vh to auto to avoid unnecessary vertical stretching */
+    width: 700px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 10px;
+    margin: 0 auto; /* Center the wrapper horizontally */
+    padding-top: 20px; /* Add some internal spacing */
+    border-radius: 10px;
+}
+
+#todo_input{
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+   
+    padding: 10px 10px 10px;
+    flex: 1;
+    color: #253D5B;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    border:2px solid #FFDAB9;
+    margin-top: 0;
+    caret-color: #333333;
+    margin-bottom: 25px;
+   
+
+
+}
+form{
+    position: relative;
+}
+#addbtn{
+    width: 50px;
+    height: 50px;
+    
+    position:absolute;
+
+    
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+ 
+    
+}
+#addbtn img{
+    width: 40px;
+    height: 30px;
+}
+.todo{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    padding: 10px 10px 10px 20px;
+    font-family: "Playwrite IT Moderna", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: bold; 
+    color: #253D5B; 
+
+}
+.todo .todo-text{
+    padding: 15px;
+    padding-right: 0;
+    flex-grow: 1;
+
+}
+.deletebtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: transparent;
+
+}
+.deletebtn img{
+    width: 40px;
+    height: 30px;
+
+}
+input[type="checkbox"]:checked~.todo-text{
+    text-decoration: line-through;
+}
+.custombox{
+    border: 2px solid rgb(173, 33, 110);
+    border-radius: 50%;
+    min-width: 20px;
+    min-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.custombox img{
+    width: 20px;
+    height: 20px;
+    object-fit: fill;
+    display: none;
+}
+input[type="checkbox"]:checked~ .custombox {
+   border: none;
+ }
+
+input[type="checkbox"]:checked~ .custombox img{
+   display: block;
+}
+input[type="checkbox"]{
+    display: none;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+

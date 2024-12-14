@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Playwrite+AR:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --green-200-lighter: hsl(148, 38%, 91%);
+    --green-600-medium: hsl(169, 82%, 27%);
+    --red: hsl(0, 66%, 54%);
+    --white: hsl(0, 0%, 100%);
+    --grey-500-med: hsl(186, 15%, 59%);
+    --grey-900-dark: hsl(187, 24%, 22%);
+}
+.dark-theme{
+    --white: black;
+    --grey-900-dark: white;
+}
+
+
+body {
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    font-family: "Karla", sans-serif;
+}
+
+.login {
+    background:transparent;
+    width: 500px;
+    height:auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+ #image{
+    display: flex;
+    height: 400px;
+    width: 500px;
+    margin-right: 50px;
+    animation: anime 1s infinite ease-in-out alternate;
+}
+
+@keyframes anime {
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+ h1 {
+    display: inline-block;
+    font-size: 50px;
+    text-align:center;
+    color:#FF9500;
+    text-align: center;
+    font-family: "Lobster Two", sans-serif;
+   font-weight: 700;
+   font-style: italic;
+}
+#post{
+    display: inline-block;
+    width: 30px;
+    margin-left: 10px;
+}
+
+
+form span {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.name-label{
+    font-size: 16px;
+    color: #FF4081;
+    font-family: "Karla",sans-serif;
+    width: 250px;
+    
+    
+}
+.name{
+    padding: 8px;
+    width: 200px;
+    margin-right: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--grey-500-med);
+}
+
+.name:hover{
+    border-color:var(--green-600-medium);
+   
+}
+input .name:focus{
+    border: 1px solid var(--green-600-medium);
+}
+form label{
+    font-size: 16px;
+    color: #FF4081;
+    font-family: "Karla",sans-serif; 
+    
+   
+}
+
+form input{
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #4ECDC4;
+    cursor: pointer;
+
+}
+
+
+
+#email{
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 8px;
+    width: 100%;
+    margin-right: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #4ECDC4;
+    box-sizing: border-box;
+}
+
+
+#checkbox{
+    margin-top: 30px;
+}
+
+input[type="checkbox"] {  
+    accent-color:#ffd700;  
+}  
+
+form label::after{
+    content: "*";
+    color: var(--green-600-medium);
+    margin-left: 5px;
+}
+#btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    width: 150px; 
+    height: 50px;
+    border: none;
+    border-radius: 5px; 
+    background-color: #ffd700;
+    color: white;
+    font-size: 16px;
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    transition: all 0.3s ease; 
+}
+
+#btn:hover {
+    animation: spin 1s forwards ease-in-out; /* Add animation */
+    background-color: white;
+    color: #FF4081;
+    border: 2px solid #ffd700;
+}
+
+@keyframes spin {
+ 
+    100% {
+        width: 150px; 
+        height: 150px; 
+        border-radius: 50%; 
+        transform: rotate(360deg);
+    }
+}
+/* For smaller screens (less than 768px) */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #image {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-top: 20px; /* Add some space above the image */
+    }
+
+    .login {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #post {
+        display: inline-block;
+        width: 20px;
+        margin-left: 5px;
+    }
+
+    #btn {
+        width: 100%;
+        height: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

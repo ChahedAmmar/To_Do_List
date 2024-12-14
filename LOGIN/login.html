@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>LOGIN</title>
+</head>
+<body>
+    <img id="image" src="assets/busy-project-manager-overwhelmed-by-work (3).png" alt="busy-project-manager-overwhelmed-by-work">
+    <div class="login">
+        <h1>LOGIN </h1>
+        <img id="post"  src="assets/post-it.png">
+       
+        <form id="myForm" novalidate>
+            <span>
+             <label for="first-name" class="name-label">First Name</label>
+            <label for="last-name" class="name-label">Last Name</label>
+            </span><br>
+            <span>
+                <input type="text" id="first-name" name="first-name" class="name" required>
+                <span id="f_name_error">  </span>
+                <input type="text" id="last-name" name="last-name" class="name" required>
+                <span id="l_name_error">  </span>
+                
+            </span><br>
+           
+           
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <span id="email_error" >  </span>
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" minlength="8" ><br>
+            <span id="password_error">  </span>
+
+            
+                <input type="checkbox" id="checkbox" required>
+                <label>subsecribe to newsletter</label>  
+                <span class="error-message">  </span>
+            <br>
+           
+            
+            <input id="btn" type="submit" value="Submit">
+            
+        </form>
+    </div>
+    <script src="login.js"> 
+       
+    </script>
+</body>
+</html>

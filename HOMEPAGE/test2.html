@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>TaskMaster</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Layout for main sections */
+       
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .text {
+            margin-top: 30px;
+        }
+
+        h1 {
+            font-family: "Lobster Two", sans-serif;
+            font-size: 2.5rem;
+            color: #FF9500;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        pre {
+            font-family: "Raleway", sans-serif;
+            font-size: 1rem;
+            font-weight: 300;
+            color: #4ECDC4;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        button {
+            background-color: #FF4081;
+            color: white;
+            font-size: 1.2rem;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        /* Navigation Styles */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        nav ul li {
+            font-family: "Montserrat Alternates", sans-serif;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+
+        nav ul li:hover {
+            text-decoration: underline;
+        }
+
+        #moon {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #ffd700;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            border-radius: 10px;
+        }
+
+        .social-icons img {
+            width: 25px;
+            margin: 0 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+           
+
+            .content {
+                margin-top: 30px;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            pre {
+                font-size: 0.9rem;
+                max-width: 80%;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            nav ul li{
+                color: #333;
+            }
+
+            button {
+                width: 100%;
+                font-size: 1.1rem;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.7rem;
+            }
+
+            pre {
+                font-size: 0.8rem;
+            }
+
+            .social-icons img {
+                width: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="../LOGIN/login.html">LOGIN</a></li>
+                <li><a href="../TODO-LIST/todo.html">To-Do List</a></li>
+                <li><a href="../TODO-LIST/chart.html">Statistics</a></li>
+                <li><a href="../FAQ/faq.html">FAQ</a></li>
+            </ul>
+            <img title="DARK MODE" id="moon" src="assets/mid-autumn-festival.png" alt="moon icon">
+        </nav>
+    </div>
+    <div class="content">
+        <img id="image1" src="assets/work-order.png" alt="TaskMaster illustration">
+        <div class="text">
+            <h1>Welcome to TaskMaster!</h1>
+            <pre>Your personal productivity assistant to stay organized and achieve your goals. Create tasks, track your progress, and never miss a deadline again!</pre>
+            <button id="go">Let’s get organized!</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 TaskMaster. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" target="_blank"><img src="assets/facebook.png" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="assets/instagram (2).png" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="assets/twitter (1).png" alt="Twitter"></a>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>

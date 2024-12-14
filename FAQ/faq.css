@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat Alternates", sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 0 20px;
+}
+footer {
+    background: linear-gradient(45deg, #FFD700, #fff8dc);
+    padding: 20px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    margin-top: 300px;
+   
+  }
+  
+  footer h3 {
+    color: #FF6F61;
+  }
+  
+  footer form {
+    margin: 20px 0;
+  }
+  
+  footer input[type="email"] {
+    padding: 10px;
+    width: 60%;
+    max-width: 300px;
+    border: 1px solid #FF6F61;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  footer button {
+    padding: 10px 20px;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer button:hover {
+    background-color: #FF8E79;
+  }
+  .social-icons img {
+    width: 20px;
+    margin: 0 10px;
+}
+#image{
+    width: 30px;
+    display: inline-block;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 20px;
+    background:transparent;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    font-weight: bold;
+    color: #ffd700;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffd700;
+}
+
+#moon {
+    width: 30px;
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 30px;
+    text-align: center;
+    font-family: "Lobster Two", cursive;
+    font-size: 2rem;
+    color: #FF9500;
+    display: inline-block;
+    margin-left: 550px;
+}
+
+.faq {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.Q {
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background 0.3s ease;
+}
+
+.Q:hover {
+    background-color: #e0e0e0;
+}
+
+.A {
+    display: none;
+    padding: 10px;
+    font-size: 0.9rem;
+    border-left: 3px solid #FF9500;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        display: flex; /* Make sure the body is a flex container */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center the elements horizontally */
+        justify-content: center; /* Ensure vertical centering */
+        height: 100vh; /* Ensure the container takes full height */
+        text-align: center; /* Center text horizontally */
+    }
+    nav ul {
+        flex-direction: column; /* Change the direction to column for smaller screens */
+        gap: 10px; /* Adjust gap between items */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust font size for tablets */
+        display: inline-block;
+        margin: 0 10px; /* Add some space around the text */
+    }
+
+    #image {
+        width: 30px; /* Slightly larger image for tablets */
+        display: inline-block;
+        margin-top: 10px; /* Add space between text and image */
+    }
+
+    .Q {
+        font-size: 0.9rem;
+    }
+
+    .A {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        display: flex; /* Make sure the body is a flex container */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center the elements horizontally */
+        justify-content: center; /* Ensure vertical centering */
+        height: 100vh; /* Ensure the container takes full height */
+        text-align: center; /* Center text horizontally */
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        display: inline-block;
+        margin: 0 10px; /* Add some space around the text */
+    }
+
+    #image {
+        width: 25px;
+        display: inline-block;
+        margin-top: 10px; /* Add space between text and image */
+    }
+
+    .Q {
+        font-size: 0.9rem;
+    }
+
+    .A {
+        font-size: 0.8rem;
+    }
+}
+
